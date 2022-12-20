@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- ÍCONE -->
+	<link rel="icon" href="assets/images/drone_quad_ico.ico">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- SCRIPT -->
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"> </script>
+	<script src="node_modules/jquery/dist/jquery.min.js"> </script>
+	<script src="assets/js/test.js"> </script>
+	<title> Origem - Drones </title>
+</head>
+<!-- CENTRALIZAÇÃO DO BODY -->
+
+<body class="mx-auto">
+	<!-- NAVBAR (MENU) -->
+	<nav class="navbar navbar-expand-lg bg-dark container-fluid border border-dark div_nav fixed-top">
+		<!-- IMAGEM DA NAV -->
+		<img src="assets/images/drone_2.webp" class="img-fluid img_nav">
+		<!-- BOTÃO TOGGLER DO EFEITO COLLAPSE -->
+		<button class="navbar-toggler" data-bs-target="#ul_menu" data-bs-toggle="collapse" aria-expanded="false"
+			aria-controls="ul_menu"> <span class="navbar-toggler-icon"> </span> </button>
+		<!-- LISTA UL DO MENU -->
+		<ul class="navbar-nav collapse navbar-collapse me-auto mb-2 mb-lg-0 text-center ul_nav" id="ul_menu">
+			<!-- ITEM DA LISTA DO MENU -->
+			<li class="nav-item item_nav">
+				<a class="nav-link li_menu" aria-current="page" href="index.html"> Home </a>
+			</li>
+			<li class="nav-item item_nav">
+				<a class="nav-link li_menu" aria-current="page" href="o_que_eh.html"> O que é </a>
+			</li>
+			<li class="nav-item item_nav">
+				<a class="nav-link li_menu" aria-current="page" href="classificacoes.html"> Classificações </a>
+			</li>
+			<li class="nav-item item_nav">
+				<a class="nav-link li_menu active" aria-current="page" href="origem.html"> Origem </a>
+			</li>
+			<li class="nav-item item_nav">
+				<a class="nav-link li_menu" aria-current="page" href="mercado.html"> Mercado </a>
+			</li>
+		</ul>
+	</nav>
+	<!-- SEÇÃO PRINCIPAL DA PÁGINA -->
+	<main>
+		<!-- DIV PARA BORDAS DO CONTEUDO PRINCIPAL -->
+		<div class="border border-dark solid border-1 p-3">
+			<!-- SEÇÃO PARA CONTEÚDO PRÓPRIO/INDIVIDUAL -->
+			<section class="container">
+				<!-- CABEÇALHO DA SEÇÃO -->
+				<header>
+					<h1 class="text-center titulo"> Origem </h1>
+					<hr>
+				</header>
+				<!-- REFERÊNCIA BIBLIOGRÁFICA -->
+				<blockquote cite="https://www.iwm.org.uk/history/a-brief-history-of-drones">
+					<p class="texto"> Os primeiros drones surgiram na Grã-Bretanha e Estados Unidos durante a Primeira
+						Guerra Mundial.</p>
+					<p class="texto"> <b>Aerial Target</b> da Grã-Bretanha, uma pequena aeronave controlada por rádio,
+						foi testada pela primeira vez em março de 1917, enquanto o torpedo aéreo Americano conhecido
+						como 'Kettering Bug' voou pela primeira vez em outubro de 1918. Apesar dos dois terem sido
+						promissores em testes de voo, nenhum foi usado operacionalmente durante a guerra.
+					</p>
+					<!-- CARROSEL COM LEGENDAS -->
+					<div id="carouselExampleCaptions"
+						class="carousel slide div_carrosel mx-auto border rounded border-dark border-1"
+						data-bs-ride="false">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+								class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+								aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<blockquote
+									cite="https://owlcation.com/humanities/World-War-1-History-The-Kettering-Bug-Worlds-First-Flying-Bomb">
+									<img src="assets/images/kettering_bug.webp" class="d-block w-100" alt="...">
+								</blockquote>
+								<div class="carousel-caption mx-auto legenda_carrosel">
+									<h5 class="legenda_carrosel_h5">Kettering Bug</h5>
+									<p>Também chamado de 'Kettering Aerial Torpedo', um dos primeiros drones a ser
+										desenvolvido</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<blockquote
+									cite="https://owlcation.com/humanities/World-War-1-History-The-Kettering-Bug-Worlds-First-Flying-Bomb">
+									<img src="assets/images/kettering_bug2.webp" class="d-block w-100" alt="...">
+								</blockquote>
+								<div class="carousel-caption mx-auto legenda_carrosel">
+									<h5 class="legenda_carrosel_h5">Kettering Bug hoje em dia</h5>
+									<p>No museu nacional de USAF</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/images/aerial_target.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption mx-auto legenda_carrosel">
+									<h5 class="legenda_carrosel_h5">Aerial Target</h5>
+									<p>Uma pequena aeronave controlada por rádio, 1917</p>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					<hr>
+					<p class="texto"> Em 1935, os britânicos produziram várias aeronaves controladas por rádio para
+						serem usadas como alvos para fins de treinamento. Acredita-se que o termo 'drone' começou a ser
+						usado nessa época, inspirado no nome de um desses modelos, o <b>DH.82B Queen Bee</b>.
+					</p>
+					<img src="assets/images/queen_bee.jpg"
+						class="d-block mx-auto img-fluid img_origem border rounded border-dark border-1">
+					<p class="text-center"> O drone Queen Bee (DH.82B Queen Bee) </p>
+					<hr>
+					<p class="texto"> Em 1994, as Forças Armadas dos EUA passaram a testar os drones carregados com
+						armas, e sua primeira utilização em combates ocorreu no Afeganistão, a partir de outubro de
+						2001.</p>
+					<p class="texto"> Desde os ataques terroristas de 11 de setembro, os Estados Unidos, em particular,
+						aumentaram significativamente o uso de drones.
+					</p>
+				</blockquote>
+				<hr>
+			</section>
+		</div>
+	</main>
+	<!-- RODAPÉ DA PÁGINA -->
+	<footer>
+		<div class="container-fluid div_rodape">
+			<!-- LISTA PARA RODAPÉ -->
+			<ul class="mx-auto">
+				<!-- LINHAS E COLUNAS -->
+				<div class="row">
+					<div class="col">
+						<!-- ITENS DA LISTA -->
+						<li class="nav-link ul_rodape"> <b>Projeto para disciplina</b> </li>
+						<li class="nav-link ul_rodape"> Linguagens de Programação para Ambientes de Redes 2 </li>
+					</div>
+
+					<!-- COLUNA -->
+					<div class="col">
+						<li class="nav-link ul_rodape"> <b>Tecnologias usadas:</b></li>
+						<li class="nav-link ul_rodape"> HTML </li>
+						<li class="nav-link ul_rodape"> CSS </li>
+						<li class="nav-link ul_rodape"> JavaScript </li>
+						<li class="nav-link ul_rodape"> Bootstrap framework </li>
+					</div>
+					<!-- COLUNA -->
+					<div class="col">
+						<!-- ITENS DA LISTA -->
+						<li class="nav-link ul_rodape"> <b>Integrantes:</b> </li>
+						<li class="nav-link ul_rodape"> Israel Garcez </li>
+						<li class="nav-link ul_rodape"> Thiago Matheus </li>
+					</div>
+				</div>
+			</ul>
+		</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

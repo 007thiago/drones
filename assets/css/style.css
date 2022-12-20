@@ -1,0 +1,328 @@
+/* FONTES DO GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+/* SELETOR DO BODY */
+body {
+	background-image: linear-gradient(180deg, #7A7A7A, #DEFFFF);
+	margin-top: 5%;
+	width: 75%;
+}
+
+/* SOBREPOR O CONTEÚDO DA DIV SOBRE O BACKGROUND-IMAGE */
+.div-home-bg {
+	position: relative;
+	padding: 30px;
+}
+
+/* OPACIDADE BAIXA NAS LEGENDAS DO CARROSEL */
+.legenda_carrosel {
+	opacity: 0.7;
+}
+
+/* OPACIDADE NORMAL AO PASSAR O MOUSE */
+.legenda_carrosel:hover {
+	opacity: 1;
+	background-color: grey;
+}
+
+/* PSEUDO-ELEMENTO 'BEFORE' DA DIV PARA ATRIBUIR UMA BACKGROUND-IMAGE APENAS A PRIMEIRA LINHA DO ELEMENTO, EVITANDO TORNAR TODOS ELEMENTOS-FILHO OPACOS */
+.div-home-bg:before {
+	content: '';
+	position: absolute;
+	opacity: 0.3;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/drone_wall.jfif');
+	background-repeat: repeat;
+	background-position: 50% 0;
+	border: black solid 1px;
+}
+
+/* CONTEÚDO SOBREPOSTO EM CIMA DO BACKGROUND IMAGE OPACO */
+.div-home-conteudo {
+	position: relative;
+}
+
+ul {
+	margin-left: 25%;
+}
+
+/* ITENS DA NAVBAR */
+.item_nav {
+	font-family: lucida sans;
+	padding: 15px;
+}
+
+/* DEFININDO UM IFRAME RESPONSIVO */
+.iframe_youtube {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 60%;
+	height: 60%;
+}
+
+/* DIV PARA AUXILIAR NO IFRAME RESPONSIVO */
+.div_iframe {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	margin-top: 5%;
+	margin-bottom: -22%;
+	overflow: hidden;
+}
+
+/* DIV DO RODAPÉ */
+.div_rodape {
+	opacity: 0.6;
+	margin-top: 5%;
+}
+
+/* HOVER PARA ADICIONAR OPACIDADE 1 E SOMBRA NA DIV DO RODAPÉ */
+.div_rodape:hover {
+	opacity: 1;
+	box-shadow: 3px 3px;
+}
+
+/* DIV DO FORMULÁRIO DA INDEX */
+.div_form {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/* BOTÃO PARA NOTÍCIAS DA INDEX */
+.botao_card {
+	width: 100%;
+}
+
+/* SOMBRA NO BOTÃO DO CARD AO CLICAR */
+.botao_card:active {
+	box-shadow: 5px 5px;
+}
+
+.botao_topo {
+	margin-left: 80%;
+	margin-top: 5%;
+}
+
+/* ITENS DA NAVBAR */
+.li_menu {
+	color: grey;
+}
+
+/* UL DA NAVBAR */
+.ul_nav {
+	margin-left: 10%;
+}
+
+/* SOMBRA DE TEXTO AO CLICAR NO ITEM DA NAVBAR */
+.li_menu:active {
+	text-shadow: 1px 1px;
+}
+
+/* DEFINE COR BRANCA AO PASSAR O MOUSE PELOS ITENS DA NAVBAR */
+.li_menu:hover {
+	/*transform: scale(1.2);*/
+	color: white;
+}
+
+/* LISTA DO RODAPÉ */
+.ul_rodape {
+	font-family: georgia;
+}
+/* IMAGEM DA NAVBAR */
+.img_nav {
+	width: 15%;
+	margin-left: 3%;
+}
+/* CLASSE PARA TEXTOS PADRÃO */
+.texto {
+	text-align: justify;
+	letter-spacing: 0.05em;
+	font-family: Arial;
+	color: black;
+	padding: 12px;
+}
+
+/* CLASSE PARA TEXTOS PADRÃO COM MENOS PADDING */
+.texto2 {
+	text-align: justify;
+	font-family: Arial;
+	color: black;
+	letter-spacing: 0.05em;
+	padding: 20px;
+}
+
+/* DIV PARA DEFINIR LARGURA DO CARROSEL */
+.div_carrosel {
+	width: 60%;
+}
+
+/* AJUSTE DE LARGURA DE UMA IMAGEM ESPECÍFICA */
+.img_origem {
+	width: 65%;
+}
+
+/* CARDS DE NOTÍCIA DA INDEX */
+.card_noticia {
+	width: 60%;
+	background-color: #979797;
+	margin-bottom: 0%;
+	opacity: 0.8;
+}
+
+/* DEFINE OPACIDADE 1 AO PASSAR O MOUSE NOS CARDS */
+.card_noticia:hover {
+	opacity: 1;
+}
+
+hr {
+	border: black solid 1px;
+}
+
+/* TÍTULO DO CABEÇALHO DO CARD */
+.titulo {
+	font-family: 'Kanit', sans-serif;
+	margin-top: 3%;
+	padding: 10px;
+}
+
+/* TEXTO DO CABECALHO DOS CARDS */
+.cabecalho_card {
+	font-size: 150%;
+	text-align: center;
+}
+
+/* TÍTULO DO CARD */
+.titulo_card {
+	text-align: justify;
+}
+
+/* CLASSE PARA DEFINIR A LARGURA DA DIV DA NAVBAR */
+.div_nav {
+	width: 75%;
+}
+
+/* DIV DO RODAPÉ */
+.rodape {
+	width: 100%;
+}
+
+a {
+	color: black;
+}
+
+.legenda_carrosel {
+	width: auto;
+}
+
+/* BREAKPOINTS */
+@media (max-width: 575.98px) {
+	body {
+		/*background-color: black;*/
+		margin-top: 10%;
+	}
+	.li_menu {
+		font-size: 35%;
+	}
+
+	.legenda_carrosel {
+		font-size: 35%;
+	}
+
+	.legenda_carrosel_h5 {
+		font-size: 100%;
+	}
+}
+
+@media (min-width: 576px) {
+	body {
+		/*background-color: yellow;*/
+		margin-top: 5%;
+	}
+
+	.li_menu {
+		font-size: 35%;
+	}
+
+	.legenda_carrosel {
+		font-size: 60%;
+	}
+
+	.legenda_carrosel_h5 {
+		font-size: 100%;
+	}
+}
+@media (min-width: 768px) {
+	body {
+		/*background-color: red;*/
+		margin-top: 5%;
+	}
+	.li_menu {
+		font-size: 100%;
+	}
+
+	.legenda_carrosel {
+		font-size: 80%;
+	}
+}
+
+@media (min-width: 900px) {
+	body {
+		/*background-color: purple;*/
+		margin-top: 5%;
+	}
+	.li_menu {
+		font-size: 100%;
+	}
+
+	.legenda_carrosel {
+		font-size: 100%;
+	}
+}
+
+@media (min-width: 990px) {
+	body {
+		/*background-color: orange;*/
+		margin-top: 10%;
+	}
+	.li_menu {
+		font-size: 100%;
+	}
+
+	.legenda_carrosel {
+		font-size: 100%;
+	}
+}
+
+@media (min-width: 1070px) {
+	body {
+		/*background-color: green;*/
+		margin-top: 5%;
+	}
+	.li_menu {
+		font-size: 100%;
+	}
+
+	.legenda_carrosel {
+		font-size: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		/*background-color: red;*/
+		margin-top: 5%;
+	}
+	.li_menu {
+		font-size: 100%;
+	}
+
+	.legenda_carrosel {
+		font-size: 100%;
+	}
+}

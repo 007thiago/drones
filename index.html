@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- ÍCONE -->
+	<link rel="icon" href="assets/images/drone_quad_ico.ico">
+	<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+	<script src="assets/js/script.js"> </script>
+	<title> Drones </title>
+</head>
+<!-- CENTRALIZAÇÃO DO BODY -->
+
+<body class="mx-auto">
+	<!-- NAVBAR (MENU) -->
+	<nav class="navbar bg-dark navbar-expand-lg container-fluid border border-dark div_nav fixed-top">
+		<!-- IMAGEM DO NAVBAR -->
+		<img src="assets/images/drone_2.webp" class="img-fluid img_nav">
+		<!-- BOTÃO TOGGLER DO NAVBAR -->
+		<button class="navbar-toggler" data-bs-target="#ul_menu" data-bs-toggle="collapse" aria-expanded="false"
+			aria-controls="ul_menu"> <span class="navbar-toggler-icon"> </span> </button>
+		</button>
+		<!-- LISTA DO MENU -->
+		<ul class="navbar-nav collapse navbar-collapse me-auto mb-2 mb-lg-0 text-center ul_nav" id="ul_menu">
+			<!-- ITENS DA LISTA -->
+			<li class="nav-item item_nav">
+				<a class="nav-link li_menu active" aria-current="page" href="index.html"> Home </a>
+			</li>
+			<li class="nav-item item_nav">
+				<a class="nav-link li_menu" aria-current="page" href="o_que_eh.html"> O que é </a>
+			</li>
+			<li class="nav-item item_nav">
+				<a class="nav-link li_menu" aria-current="page" href="classificacoes.html"> Classificações </a>
+			</li>
+			<li class="nav-item item_nav">
+				<a class="nav-link li_menu" aria-current="page" href="origem.html"> Origem </a>
+			</li>
+			<li class="nav-item item_nav">
+				<a class="nav-link li_menu" aria-current="page" href="mercado.html"> Mercado </a>
+			</li>
+		</ul>
+	</nav>
+	<!-- SEÇÃO PRINCIPAL DA PÁGINA -->
+	<main>
+		<!-- DIV PARA BORDAS DO CONTEUDO PRINCIPAL -->
+		<div class="border border-dark solid border-1 p-3 div_meio">
+			<!-- SEÇÃO PARA CONTEÚDO PRÓPRIO/INDIVIDUAL -->
+			<section class="container">
+				<!-- CABEÇALHO DA SEÇÃO -->
+				<header>
+					<h1 class="text-center titulo"> O que está rolando no mundo dos<p></p>DRONES... </h1>
+					<hr>
+				</header>
+				<button class="my-3 d-block mx-auto btn btn-success botao_news" href="#news" data-bs-toggle="collapse">
+					Abrir/fechar </button>
+				<!-- DIV PARA INSERIR UM BACKGROUND-IMAGE USANDO PSEUDO-ELEMENTO, PARA CONTROLAR A OPACIDADE SEM AFETAR OS ELEMENTOS-FILHO -->
+				<div class="div-home-bg">
+					<!-- DIV PARA SEPARAR O CONTEUDO QUE NAO TERA ALTERACAO DE OPACIDADE -->
+					<div class="div-home-conteudo collapse" id="news">
+						<!-- LINHAS E COLUNAS -->
+						<div class="row">
+							<div class="col">
+								<!-- CARD DE NOTÍCIA -->
+								<div class="card card_noticia border rounded border-dark border-0 mx-auto">
+									<!-- CABEÇALHO DO CARD -->
+									<div class="card-header">
+										<p class="cabecalho_card"> Drones na copa do mundo </p>
+									</div>
+									<!-- IMAGEM DE TOPO DO CARD -->
+									<img src="assets/images/drone_copa.jpg" class="card-img-top img-fluid">
+									<!-- CORPO DO CARD -->
+									<div class="card-body">
+										<p class="card-title h4 text-justify titulo_card"> Copa do Mundo 2022: drones
+											são usados para aumentar a segurança nos estádios </p>
+										<p class="card-text"> Os dispositivos são aliados importantes contra possíveis
+											investidas de terroristas.</p>
+										<a href="https://mundoconectado.com.br/noticias/v/29767/copa-do-mundo-2022-drones-sao-usados-para-aumentar-a-seguranca-nos-estadios"
+											class="btn btn-dark botao_card" target="_blank" role="button"> Saber mais
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<hr>
+						<!-- LINHAS E COLUNAS -->
+						<div class="row">
+							<div class="col">
+								<!-- CARD DE NOTÍCIA -->
+								<div class="card card_noticia border rounded border-dark border-0 mx-auto">
+									<div class="card-header">
+										<p class="cabecalho_card"> Show cancelado em Curitiba </p>
+									</div>
+									<!-- IMAGEM DE TOPO DO CARD -->
+									<img src="assets/images/chuva_drone.jpg" class="card-img-top">
+									<!-- CORPO DO CARD -->
+									<div class="card-body">
+										<p class="card-title h4 titulo_card"> Chuva cancela show de drones e estreia da
+											iluminação da Árvore do Barigui em Curitiba </p>
+										<p class="card-text"> A estreia com show de drones da iluminação da Árvore de
+											Natal de 22 metros instalada no lago do Parque Barigui foi cancelada em
+											razão da forte chuva que caiu no fim desta tarde. </p>
+										<!-- BOTÃO DO CARD -->
+										<a href="https://www.bemparana.com.br/noticias/parana/chuva-cancela-show-de-drones-e-estreia-da-iluminacao-da-arvore-do-barigui-em-curitiba/"
+											class="btn btn-dark botao_card" target="_blank"> Saber mais </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<!-- LINHAS E COLUNAS -->
+						<div class="row">
+							<div class="col">
+								<div class="card card_noticia border rounded border-dark border-0 mx-auto">
+									<div class="card-header">
+										<p class="cabecalho_card"> </p>
+									</div>
+									<img src="assets/images/drone_news.webp" class="card-img-top">
+									<div class="card-body">
+										<p class="card-title h4 titulo_card"> DJI revela drone Mavic 3M para
+											agricultores e monitoramento ambiental</p>
+										<p class="card-text"> A DJI acaba de atualizar a sua linha de drones compactos
+											com o novo modelo Mavic 3M. O produto é voltado para uso profissional,
+											especialmente na agricultura e mapeamento de grandes áreas verdes.</p>
+										<a href="https://br.financas.yahoo.com/noticias/dji-revela-drone-mavic-3m-154000118.html?guccounter=1"
+											class="btn btn-dark botao_card" target="_blank"> Saber mais </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<!-- LINHAS E COLUNAS -->
+						<div class="row">
+							<div class="col">
+								<div class="card card_noticia border rounded border-dark border-0 mx-auto">
+									<div class="card-header">
+										<p class="cabecalho_card"> </p>
+									</div>
+									<img src="assets/images/axl_rose.webp" class="card-img-top">
+									<div class="card-body">
+										<p class="card-title h4 titulo_card"> Axl Rose esbraveja após avistar drones em
+											show na Austrália: "Filho da p***"</p>
+										<p class="card-text"> Cantor publicou texto em seu Twitter pedindo para que os
+											fãs não façam isso para não dispersar o show, porque deixa a plateia
+											irritada: "use o seu brinquedo em outro lugar".
+										</p>
+										<a href="https://revistaquem.globo.com/noticias/noticia/2022/11/axl-rose-esbraveja-com-drones-em-show-na-australia-invasivo.ghtml"
+											class="btn btn-dark botao_card" target="_blank"> Saber mais </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<!-- BOTÃO LINKANDO MAIS NOTÍCIAS -->
+						<a href="https://www.google.com/search?q=drones&source=lnms&tbm=nws&sa=X&ved=2ahUKEwjfx7jQnMr7AhXPqZUCHQUlCBwQ_AUoA3oECAEQBQ&biw=1440&bih=757&dpr=1"
+							class="nav-link" target="_blank"> <button class="d-block mx-auto btn btn-dark"> Mais
+								notícias </button> </a>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<!-- FORMULÁRIO DE FEEDBACK -->
+	<section class="container">
+		<div class="div_form">
+			<h1 class="titulo text-center"> Nos dê sua opinião sobre o site </h1>
+			<form class="text-center" onsubmit="return feedback()" method="get" id="feedback">
+			<div class="row">
+				<div class="col"><input type="text" class="form-control" placeholder="Seu nome" name="nome" maxlength="100" id="nome"></div>
+				<div class="col"> <input type="text" class="form-control" placeholder="Dê seu feedback" name="feed" maxlength="100" id="feed"></div>
+				<p></p>
+				</div>
+
+				<p></p>
+				<input type="submit" class="btn btn-primary">
+			</form>
+			<a href="#" class="nav-link"> <button class="btn btn-primary botao_topo"> Voltar ao topo </a> </button>
+		</div>
+	</section>
+	<hr>
+	<!-- RODAPÉ DA PÁGINA -->
+	<footer>
+		<!-- CONTAINER PARA RODAPÉ -->
+		<div class="container-fluid div_rodape">
+			<!-- LISTA PARA RODAPÉ -->
+			<ul class="mx-auto">
+				<!-- LINHAS E COLUNAS -->
+				<div class="row">
+					<div class="col">
+						<!-- ITENS DA LISTA -->
+						<li class="nav-link ul_rodape"> <b>Projeto para disciplina</b> </li>
+						<li class="nav-link ul_rodape"> Linguagens de Programação para Ambientes de Redes 2 </li>
+					</div>
+
+					<!-- COLUNA -->
+					<div class="col">
+						<li class="nav-link ul_rodape"> <b>Tecnologias usadas:</b></li>
+						<li class="nav-link ul_rodape"> HTML </li>
+						<li class="nav-link ul_rodape"> CSS </li>
+						<li class="nav-link ul_rodape"> JavaScript </li>
+						<li class="nav-link ul_rodape"> Bootstrap framework </li>
+					</div>
+					<!-- COLUNA -->
+					<div class="col">
+						<!-- ITENS DA LISTA -->
+						<li class="nav-link ul_rodape"> <b>Integrantes:</b> </li>
+						<li class="nav-link ul_rodape"> Israel Garcez </li>
+						<li class="nav-link ul_rodape"> Thiago Matheus </li>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</footer>
+</body>
+
+</html>
